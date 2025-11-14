@@ -2,6 +2,12 @@
 
 This repository is my personal reference for data structures and algorithms. It contains implementations of standard data structures and algorithms in a variety of programming languages, along with explanations, examples, and analysis.
 
+This isn't a study aid, it's a cheat sheet for quick reference during interviews and while working on projects. The point of this project is to create an all in one reference with the assumption that the reader has already seen all these data structures and algorithms, and just wants to refresh their memory.
+
+That said, I'm making it as a way for *me* to study data structures and algorithms, so it will aid my studying quite a bit :)
+
+This might end up as a reference book/blog posts in the future. I might also do another one on system design and architecture targeted at a more senior audience.
+
 ## Table of Contents
 
 - [Languages](#languages)
