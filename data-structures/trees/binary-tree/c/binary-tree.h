@@ -17,6 +17,7 @@ Node* create_node(int data);
 void free_node(Node* node);
 
 void print_node(Node* node);
+void _recursive_print_node(Node* node, int level);
 
 Node* get_left(Node* node);
 Node* get_right(Node* node);

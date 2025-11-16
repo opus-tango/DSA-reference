@@ -1,6 +1,7 @@
 #include "binary-tree.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 Node* create_node(int data){
   Node* node = malloc(sizeof(Node));
@@ -21,14 +22,20 @@ void free_node(Node* node){
 }
 
 void print_node(Node* node){
+  _recursive_print_node(node, 0);
+}
+
+void _recursive_print_node(Node* node, int level){
   if (node->right != NULL) {
-    printf("-");
-    print_node(node->right);
+    _recursive_print_node(node->right, level + 1);
   }
-  printf("%d", node->data);
+  char* dashes = malloc(sizeof(char) * (level+1));
+  memset(dashes, '-', level);
+  dashes[level] = '\0';
+  printf("%s%d\n", dashes, node->data);
+  free(dashes);
   if (node->left != NULL) {
-    printf("-");
-    print_node(node->left);
+    _recursive_print_node(node->left, level + 1);
   }
 }
 
