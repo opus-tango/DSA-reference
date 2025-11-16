@@ -5,7 +5,7 @@ RELEASE_FLAGS = -Wall -Wextra -DNDEBUG
 # LFLAGS = -lpthread
 
 # Source files
-SRCS = main.c
+SRCS = main.c binary-tree.c
 
 # Object files definition
 OBJS = $(SRCS:.c=.o)
